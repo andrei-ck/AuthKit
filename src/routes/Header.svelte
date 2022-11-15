@@ -71,7 +71,7 @@
 		</div>
 		<div class="menuItemsContainer">
 			<div class="gitHubContainer">
-				<a href="https://github.com/andreideak/AuthKit"
+				<a href="https://github.com/andreideak/AuthKit" target="blank"
 					><svg
 						width="64px"
 						height="64px"
