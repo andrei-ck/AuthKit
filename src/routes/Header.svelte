@@ -142,6 +142,7 @@
 		width: 12em;
 		flex-direction: row;
 		justify-content: space-between;
+		font-weight: 700;
 	}
 
 	.gitHubContainer,
