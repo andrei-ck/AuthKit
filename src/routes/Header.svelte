@@ -1,4 +1,9 @@
 <script>
+	const menuItems = [
+		{ name: 'JWT', url: '/jwt' },
+		{ name: 'SAML', url: '/saml' },
+		{ name: 'RFCs', url: '/rfcs' }
+	];
 </script>
 
 <header>
@@ -70,6 +75,11 @@
 			<a href=".">AuthKit</a>
 		</div>
 		<div class="menuItemsContainer">
+			<div class="menuItems">
+				{#each menuItems as menuItem}
+					<div class={menuItem.name}><a href={menuItem.url}>{menuItem.name}</a></div>
+				{/each}
+			</div>
 			<div class="gitHubContainer">
 				<a href="https://github.com/andreideak/AuthKit" target="blank"
 					><svg
@@ -125,6 +135,13 @@
 		padding-left: 0.5em;
 		font-size: 24px;
 		font-weight: 700;
+	}
+
+	.menuItems {
+		display: flex;
+		width: 12em;
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.gitHubContainer,
