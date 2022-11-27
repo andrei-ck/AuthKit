@@ -21,6 +21,10 @@
 	}
 
 	main {
-		height: 83vh;
+		height: 78vh;
+		padding-top: 2em;
+		padding-left: 5em;
+		padding-right: 5em;
+		padding-bottom: 2em;
 	}
 </style>

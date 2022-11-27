@@ -5,7 +5,6 @@
 
 <style>
 	.underConstruction {
-		margin-top: 100px;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
