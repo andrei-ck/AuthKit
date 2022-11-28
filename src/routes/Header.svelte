@@ -1,4 +1,6 @@
 <script>
+	import { fade } from 'svelte/transition';
+
 	const menuItems = [
 		{ name: 'JWT', url: '/jwt' },
 		{ name: 'SAML', url: '/saml' },
@@ -129,6 +131,7 @@
 	.logoContainer svg {
 		height: 2.5em;
 		fill: black;
+		transition: all 0.5s ease-out;
 	}
 
 	.logoContainer a {
@@ -139,10 +142,23 @@
 
 	.menuItems {
 		display: flex;
-		width: 12em;
+		width: 14em;
 		flex-direction: row;
 		justify-content: space-between;
 		font-weight: 700;
+	}
+
+	.logoContainer a,
+	.menuItems a,
+	.gitHubContainer svg {
+		transition: all 0.4s ease-out;
+	}
+
+	.menuItems a:hover,
+	.menuItems a:focus,
+	.gitHubContainer a:hover,
+	.gitHubContainer a:focus {
+		color: #6499e3;
 	}
 
 	.gitHubContainer,
@@ -167,17 +183,17 @@
 		border-radius: 2em;
 		color: #ffffff;
 		background-color: #3a3a3a;
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 1.5em;
+		padding-right: 1.5em;
 		font-size: 14px;
-		transition: 0.5s;
+		font-weight: 700;
+		transition: all 0.5s ease-out;
 	}
 
 	.signInButton:hover {
-		border: 1px solid #3a3a3a;
-		color: #3a3a3a;
-		background-color: #ffffff;
-		transition: 0.5s;
+		border: 1px solid #6499e3;
+		color: #ffffff;
+		background-color: #6499e3;
 	}
 
 	@media (prefers-color-scheme: dark) {
@@ -197,10 +213,10 @@
 		}
 
 		.signInButton:hover {
-			border: 1px solid #ffffff;
+			border: 1px solid #6499e3;
 			border-radius: 2em;
 			color: #ffffff;
-			background-color: #3a3a3a;
+			background-color: #6499e3;
 			transition: 0.5s;
 		}
 
