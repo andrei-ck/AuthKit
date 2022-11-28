@@ -39,6 +39,7 @@
 	.left-side,
 	.right-side {
 		flex-grow: 3;
+		border-left: 1px solid #ffffff;
 	}
 
 	.sidebar-menu,
